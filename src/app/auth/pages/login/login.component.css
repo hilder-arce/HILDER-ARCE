@@ -1,0 +1,60 @@
+/* Fondo general */
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Card principal */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+/* Inputs */
+.input-group-text {
+  border: none;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.4);
+}
+
+/* Botones sociales */
+.social-btn {
+  width: 48px;
+  height: 48px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 30px 20px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .social-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+}
