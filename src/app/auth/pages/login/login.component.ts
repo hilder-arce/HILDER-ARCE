@@ -3,9 +3,6 @@ declare global {
   interface Window { google?: any; }
 }
 
-//PARA FACEBOOK
-declare const FB: any;
-
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -27,16 +24,6 @@ export class LoginComponent implements AfterViewInit, OnDestroy {
     // Esperamos a que la librería GSI esté disponible
     this.tryInitGoogleButton();
 
-    // 🔹 Inicialización de Facebook
-    (window as any).fbAsyncInit = () => {
-      FB.init({
-        appId: 'TU_APP_ID_DE_FACEBOOK',
-        cookie: true,
-        xfbml: true,
-        version: 'v19.0'
-      });
-    };
-
   }
 
   private tryInitGoogleButton(retries = 0) {
@@ -57,8 +44,10 @@ export class LoginComponent implements AfterViewInit, OnDestroy {
         window.google.accounts.id.renderButton(el, {
           theme: 'outline',
           size: 'large',
-          shape: 'rectangular',
-          width: "100%"
+          shape: 'square',
+          text: 'signin_with',
+          width: 'auto',
+          logo_alignment: 'center'
         });
       } else {
         console.warn('Elemento googleBtn no disponible para renderizar el botón.');
@@ -87,20 +76,6 @@ export class LoginComponent implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.subs.unsubscribe();
-  }
-
-  //FACEBBOKK
-  loginWithFacebook() {
-    FB.login((response: any) => {
-      if (response.authResponse) {
-        FB.api('/me', { fields: 'name,email,picture' }, (userInfo: any) => {
-          console.log('Usuario de Facebook:', userInfo);
-          // Aquí podrías enviar los datos al backend
-        });
-      } else {
-        console.warn('Usuario canceló el login de Facebook.');
-      }
-    }, { scope: 'email,public_profile' });
   }
 
 }

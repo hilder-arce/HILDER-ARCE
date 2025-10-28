@@ -1,0 +1,13 @@
+<nav class="elite-sidebar"
+     [class.active]="menuActive"
+     (mouseenter)="onMouseEnter()"
+     (mouseleave)="onMouseLeave()">
+  <div class="sidebar-inner">
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active">Inicio</a></li>
+      <li><a routerLink="/proyectos" routerLinkActive="active">Proyectos</a></li>
+      <li><a routerLink="/servicios" routerLinkActive="active">Servicios</a></li>
+      <li><a routerLink="/contacto" routerLinkActive="active">Contacto</a></li>
+    </ul>
+  </div>
+</nav>

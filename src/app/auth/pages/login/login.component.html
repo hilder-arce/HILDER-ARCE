@@ -1,75 +1,88 @@
-<div class="login-container d-flex flex-column align-items-center justify-content-center bg-primary">
-  <div class="login-card bg-white rounded-4 shadow-lg text-center p-4 p-md-5">
+<!-- CONTENEDOR PRINCIPAL -->
+<div class="login-container h-100 d-flex flex-column align-items-center justify-content-center w-100">
+
+  <!-- TARJETA DEL LOGIN -->
+  <div class="login-card bg-white rounded-4 shadow-lg text-center p-2 m-4 p-md-4 m-md-4 w-100" style="max-width: 400px;">
     
-    <!-- Encabezado -->
-    <div class="mb-3">
-      <h2 class="fw-bold text-primary mb-1">Bienvenido</h2>
-      <p class="text-muted">Inicia sesión para continuar</p>
-      <hr class="w-75 mx-auto">
-    </div>
-
-    <!-- Formulario -->
-    <form class="w-100" novalidate>
-
-      <!-- Correo -->
-      <div class="mb-4 text-start">
-        <label for="email" class="form-label fw-semibold">Correo Electrónico</label>
-        <div class="input-group">
-          <span class="input-group-text bg-primary text-white">
-            <i class="bi bi-envelope-fill"></i>
-          </span>
-          <input type="email" id="email" class="form-control form-control-lg shadow-sm" name="email" required>
-        </div>
-      </div>
-
-      <!-- Contraseña -->
-      <div class="mb-3 text-start">
-        <label for="password" class="form-label fw-semibold">Contraseña</label>
-        <div class="input-group">
-          <span class="input-group-text bg-primary text-white">
-            <i class="bi bi-lock-fill"></i>
-          </span>
-          <input type="password" id="password" class="form-control form-control-lg shadow-sm" name="password" required>
-        </div>
-      </div>
-
-      <!-- Enlace de ayuda -->
-      <div class="text-center mb-3">
-        <a href="#" class="text-decoration-none fw-bold text-primary small">¿Olvidaste tu contraseña?</a>
-      </div>
-
-      <!-- Botón principal -->
-      <div class="d-flex justify-content-center mb-4">
-        <button type="submit" class="btn btn-primary btn-lg w-100 shadow-sm">ACCEDER</button>
-      </div>
-
-      <!-- Social Login -->
-      <div class="d-flex flex-column justify-content-center gap-3 mb-3">
-        
-        <!--boton de google-->
-        <div #googleBtn id="google-btn" class="w-100"></div>
-
-        <!-- Botón de Facebook -->
-        <button type="button"
-          class="btn btn-outline-primary rounded-circle shadow-sm social-btn"
-          (click)="loginWithFacebook()">
-          <i class="bi bi-facebook"></i>
-        </button>
-
-        <!--boton de instagram-->
-        <button type="button" class="btn btn-outline-warning rounded-circle shadow-sm social-btn text-danger">
-          <i class="bi bi-instagram"></i>
-        </button>
+    <!-- ENCABEZADO PREMIUM CON IMAGEN -->
+    <div class="text-center mb-2">
+      
+      <!-- ICONO / IMAGEN -->
+      <div class="d-inline-flex align-items-center justify-content-center bg-light border border-primary-subtle rounded-circle mb-2 overflow-hidden" style="width: 80px; height: 80px;">
+        <img src="https://i.ibb.co/Hp72r8P8/logo-cajace.jpg" alt="Logo" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
       
+      <!-- TITULO -->
+      <h2 class="fw-bold text-primary mb-1">HΛYCE SYSTEMS</h2>
+      
+      <!-- SUBTITULO -->
+      <p class="text-muted small mx-auto" style="max-width: 280px;">
+        Acceso privado ─ Plataforma exclusiva.
+      </p>
+      
+      <!-- SEPARADOR -->
+      <hr class="mx-auto opacity-75" style="width: 70%;">
+      
+    </div>
+      
 
-      <!-- Registro -->
-      <div class="text-center mt-2">
-        <p class="m-0">¿No tienes una cuenta?
-          <button type="button" class="btn text-primary p-0 m-0 fw-semibold text-decoration-none">
-            Regístrate
+    <!-- FORMULARIO -->
+    <form class="w-100 mb-0" novalidate>
+
+      <!-- CAMPO CORREO -->
+      <div class="mb-2 text-start">
+        <label for="email" class="form-label fw-semibold">Correo Electrónico</label>
+        <div class="input-group">
+          <span class="input-group-text bg-primary text-white border-2 border-primary">
+            <i class="bi bi-envelope-fill"></i>
+          </span>
+          <input 
+            type="email" 
+            id="email" 
+            class="form-control form-control-lg shadow-sm" 
+            name="email" 
+            required>
+        </div>
+      </div>
+
+      <!-- CAMPO CONTRASEÑA -->
+      <div class="mb-1 text-start">
+        <label for="password" class="form-label fw-semibold">Contraseña</label>
+        <div class="input-group">
+          <span class="input-group-text bg-primary text-white border-2 border-primary">
+            <i class="bi bi-lock-fill"></i>
+          </span>
+          <input 
+            type="password" 
+            id="password" 
+            class="form-control form-control-lg shadow-sm" 
+            name="password" 
+            required>
+        </div>
+      </div>
+
+      <!-- ENLACE DE RECUPERAR CONTRASEÑA -->
+      <div class="text-center mb-2">
+        <a href="#" class="text-decoration-none fw-bold text-primary small">
+          ¿Olvidaste tu contraseña?
+        </a>
+      </div>
+
+      <!-- CONTENEDOR DE BOTONES -->
+      <div class="d-flex flex-column align-items-center justify-content-center w-100 mb-0">
+
+        <div class="w-auto">
+          
+          <!-- BOTÓN PRINCIPAL -->
+          <button class="btn btn-primary d-flex align-items-center justify-content-center w-100 mb-2">
+            ACCEDER
           </button>
-        </p>
+          
+          <!-- BOTÓN DE GOOGLE -->
+          <div #googleBtn id="google-btn" class="google-btn d-flex align-items-center justify-content-center w-100 mb-0"></div>
+          
+        </div>
+        
       </div>
 
     </form>

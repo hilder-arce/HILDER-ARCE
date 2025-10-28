@@ -1,0 +1,155 @@
+/* ===== SIDEBAR FUTURISTA PREMIUM ÉLITE ===== */
+.elite-sidebar {
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  height: auto;
+  width: 240px;
+  background: linear-gradient(180deg, rgba(5, 5, 10, 0.9), rgba(0, 0, 0, 0.95));
+  backdrop-filter: blur(20px) saturate(220%);
+  border-right: 1px solid rgba(0, 255, 255, 0.25);
+  border-bottom-right-radius: 18px;
+  box-shadow:
+    inset 0 0 25px rgba(0, 255, 255, 0.15),
+    0 0 40px rgba(255, 0, 255, 0.15),
+    0 0 60px rgba(0, 200, 255, 0.1);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.65s cubic-bezier(0.25, 1, 0.3, 1);
+  z-index: 9998;
+  overflow: hidden;
+}
+
+/* ===== ACTIVACIÓN ===== */
+.elite-sidebar.active {
+  transform: translateX(0);
+  opacity: 1;
+  animation: holoPulse 2s ease-in-out infinite alternate;
+}
+
+/* ===== EFECTO DE ENERGÍA EN LOS BORDES ===== */
+.elite-sidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, #00ffff, #ff00ff, #00aaff);
+  filter: blur(3px);
+  opacity: 0.7;
+  animation: flowEnergy 3s linear infinite;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes flowEnergy {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 200%; }
+}
+
+@keyframes holoPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(0,255,255,0.1),
+                0 0 40px rgba(255,0,255,0.1);
+  }
+  100% {
+    box-shadow: 0 0 35px rgba(0,255,255,0.25),
+                0 0 55px rgba(255,0,255,0.25);
+  }
+}
+
+/* ===== INTERIOR ===== */
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  height: 100%;
+  padding: 30px 35px;
+  gap: 25px;
+}
+
+/* ===== ENLACES ===== */
+.elite-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.elite-sidebar li {
+  margin: 18px 0;
+  position: relative;
+}
+
+.elite-sidebar a {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffd900;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  display: inline-block;
+  padding: 6px 0;
+  position: relative;
+}
+
+/* ===== EFECTO LÍNEA HOLOGRÁFICA ===== */
+.elite-sidebar a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #00ffff, #ff00ff, #009dff);
+  box-shadow: 0 0 10px rgba(0,255,255,0.5);
+  transition: width 0.4s ease-in-out;
+  border-radius: 2px;
+}
+
+.elite-sidebar a:hover::before,
+.elite-sidebar a.active::before {
+  width: 100%;
+}
+
+/* ===== EFECTO GLOW ===== */
+.elite-sidebar a:hover {
+  color: #ffffff;
+  text-shadow:
+    0 0 10px rgba(0,255,255,0.8),
+    0 0 20px rgba(255,0,255,0.7),
+    0 0 35px rgba(0,180,255,0.9);
+  transform: translateX(6px);
+}
+
+/* ===== LUZ FLOTANTE INTERNA ===== */
+.elite-sidebar::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -50px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(0,255,255,0.3), transparent 70%);
+  filter: blur(25px);
+  animation: floatLight 8s ease-in-out infinite alternate;
+}
+
+@keyframes floatLight {
+  0% { transform: translateY(-30px) scale(1); opacity: 0.5; }
+  100% { transform: translateY(30px) scale(1.2); opacity: 0.8; }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .elite-sidebar {
+    width: 200px;
+    backdrop-filter: blur(12px);
+  }
+
+  .elite-sidebar a {
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+  }
+}

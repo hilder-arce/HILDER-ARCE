@@ -1,0 +1,79 @@
+/* ===== HEADER PRINCIPAL ===== */
+.header {
+  background-color: #1e1b74;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* TEXTO PREMIUM */
+.company-name {
+  font-size: 1.6rem;
+  z-index: 1;
+}
+
+.company-slogan {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  z-index: 1;
+}
+
+/* Partícula */
+.border-orbit {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fdd835;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  animation: orbitRect 5s linear infinite;
+}
+
+/* Animación que recorre el borde del div */
+@keyframes orbitRect {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 10px);
+  }
+  50% {
+    top: calc(100% - 10px);
+    left: calc(100% - 10px);
+  }
+  75% {
+    top: calc(100% - 10px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+/* ===== ICONO DEL MENÚ ===== */
+.header .btn-outline-light i {
+  transition: transform 0.3s ease;
+}
+
+.header .btn-outline-light:hover i {
+  transform: rotate(90deg);
+}
+
+/*BOTON DE LOGIN*/
+.btn-login {
+  background-color: #fdd835;
+  color: #1e1b74;
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50rem;
+}
