@@ -1,59 +1,67 @@
-# Proyecto
+# 👋 Hola, soy **Hacker**  
+### 💻 Desarrollador Full Stack | Freelance | Apasionado por la investigación cuántica
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+🧠 Las ideas se convierten en código.  
+💼 Ayudo a empresas y proyectos a construir soluciones modernas, escalables y eficientes.  
+⚡ Siempre explorando nuevas tecnologías y llevando cada proyecto al siguiente nivel.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🌐 Conecta conmigo
+[💼 LinkedIn](https://linkedin.com/in/tu-perfil)  
+[🌐 Portafolio](https://tusitio.com)  
+[📷 Instagram](https://instagram.com/tuusuario)  
+[🎥 TikTok](https://tiktok.com/@tuusuario)  
+[📌 Pinterest](https://pinterest.com/tuusuario)  
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠️ Tecnologías y herramientas
+**Frontend:**  
+`HTML5` · `CSS3` · `JavaScript` · `TypeScript` · `Angular` · `React` · `Next.js` · `TailwindCSS`
 
-## Code scaffolding
+**Backend:**  
+`Node.js` · `NestJS` · `Express` · `Java` · `Spring` · `Python`
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+**Bases de datos:**  
+`MySQL` · `PostgreSQL` · `MongoDB` · `Supabase` · `Firebase`
 
-```bash
-ng generate component component-name
-```
+**Otros:**  
+`Git` · `Docker` · `GraphQL` · `Figma` · `Notion` · `Jest` · `Cypress`
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📊 Mis estadísticas de GitHub
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TU_USUARIO&show_icons=true&theme=tokyonight)
 
-## Building
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO&layout=compact&theme=tokyonight)
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🎯 Proyectos destacados
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 🔹 **Proyecto 1 – Nombre del proyecto**
+Descripción breve (qué hace, tecnologías usadas, etc.)  
+👉 Demo: https://link-a-demo.com  
+👉 Repo: https://github.com/tuusuario/proyecto1
 
-## Running unit tests
+### 🔹 **Proyecto 2 – Nombre del proyecto**
+Descripción breve del proyecto.  
+👉 Repo: https://github.com/tuusuario/proyecto2
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 📺 Últimos videos (si tienes YouTube/TikTok)
+- 🔥 Título del video 1  
+- ⚡ Título del video 2  
+- 🚀 Título del video 3  
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## ✨ Frase personal  
+> _“El código es la herramienta, pero las ideas son el verdadero motor de la innovación.”_
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🐍 Fun fact  
+Cuando no estoy programando, probablemente estoy experimentando cosas nuevas, aprendiendo algo o rompiendo algo para entender cómo funciona 😄.
