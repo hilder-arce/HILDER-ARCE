@@ -31,26 +31,6 @@
 
 ---
 
-## 🎯 Proyectos destacados
-
-### 🔹 **Proyecto 1 – Nombre del proyecto**
-Descripción breve (qué hace, tecnologías usadas, etc.)  
-👉 Demo: https://link-a-demo.com  
-👉 Repo: https://github.com/tuusuario/proyecto1
-
-### 🔹 **Proyecto 2 – Nombre del proyecto**
-Descripción breve del proyecto.  
-👉 Repo: https://github.com/tuusuario/proyecto2
-
----
-
-## 📺 Últimos videos (si tienes YouTube/TikTok)
-- 🔥 Título del video 1  
-- ⚡ Título del video 2  
-- 🚀 Título del video 3  
-
----
-
 ## ✨ Frase personal  
 > _“El código es la herramienta, pero las ideas son el verdadero motor de la innovación.”_
 
