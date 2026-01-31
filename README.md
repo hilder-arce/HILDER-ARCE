@@ -9,10 +9,10 @@
 
 ## 🌐 Conecta conmigo
 [💼 LinkedIn](https://linkedin.com/in/tu-perfil)  
-[🌐 Portafolio](https://tusitio.com)  
-[📷 Instagram](https://instagram.com/tuusuario)  
-[🎥 TikTok](https://tiktok.com/@tuusuario)  
-[📌 Pinterest](https://pinterest.com/tuusuario)  
+[🌐 Portafolio](https://hilderarce.com)  
+[📷 Instagram](https://instagram.com/hilderarce)  
+[🎥 TikTok](https://tiktok.com/@hilderarce)  
+[📌 Pinterest](https://pinterest.com/hilderarce)  
 
 ---
 
